@@ -6,7 +6,7 @@ app.get("/", (req, res) => res.type('html').send(html));
 
 app.post("/send/", function(req, res){
   res.send(req.query);
-};
+});
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
