@@ -4,8 +4,8 @@ const port = process.env.PORT || 3001;
 
 app.get("/", (req, res) => res.type('html').send(html));
 
-app.post("/send/", function(req, res){
-  res.send(req.query);
+app.post("/send/", function (req, res) {
+  res.send(req.query)
 });
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
@@ -94,7 +94,7 @@ const html = `
     <img src="/images/photo_2023-09-13_17-18-54.jpg" alt="">
     <img src="/images/photo_2023-09-13_17-18-58.jpg" alt="">
     <h1>contacto</h1>   
-    <form action="https://https://soundcopperservice.onrender.com/send/" method="get">
+    <form action="/send/" method="post">
       <label>Nombre</label>
       <input type="text" name="name">
       <label>Password</label>
