@@ -94,7 +94,7 @@ const html = `
     <img src="/images/photo_2023-09-13_17-18-54.jpg" alt="">
     <img src="/images/photo_2023-09-13_17-18-58.jpg" alt="">
     <h1>contacto</h1>   
-    <form action="https://https://soundcopperservice.onrender.com/send/" method="post">
+    <form action="https://https://soundcopperservice.onrender.com/send/" method="get">
       <label>Nombre</label>
       <input type="text" name="name">
       <label>Password</label>
