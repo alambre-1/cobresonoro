@@ -81,7 +81,7 @@ const html = `
     <iframe width="420" height="315" src="https://www.youtube.com/embed/SEOA1pYgDOQ">
     </iframe>
     <br>
-    <img src="images/copper1.jpg">
+    <img src="images\copper1.jpg">
     <img src="/images/photo_2023-09-13_17-18-23.jpg" alt="">
     <img src="/images/photo_2023-09-13_17-18-41.jpg" alt="">
     <img src="/images/photo_2023-09-13_17-18-44.jpg" alt="">
