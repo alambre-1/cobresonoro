@@ -4,6 +4,10 @@ const port = process.env.PORT || 3001;
 
 app.get("/", (req, res) => res.type('html').send(html));
 
+app.post("/send/", function(req, res){
+  res.send(req.query);
+};
+
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 server.keepAliveTimeout = 120 * 1000;
@@ -81,7 +85,7 @@ const html = `
     <iframe width="420" height="315" src="https://www.youtube.com/embed/SEOA1pYgDOQ">
     </iframe>
     <br>
-    <img src="images\copper1.jpg">
+    <img src="images/copper1.jpg">
     <img src="/images/photo_2023-09-13_17-18-23.jpg" alt="">
     <img src="/images/photo_2023-09-13_17-18-41.jpg" alt="">
     <img src="/images/photo_2023-09-13_17-18-44.jpg" alt="">
