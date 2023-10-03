@@ -3,7 +3,9 @@ const app = express();
 const port = process.env.PORT || 3001;
 //app.use('/images', express.static(__dirname + "/images"));
 //app.use(express.static('/images'))
-app.use(express.static('cobresonoro'))
+app.use(express.static('images'))
+app.use(express.static('css'))
+app.use(express.static('js'))
 
 app.get("/", (req, res) => res.type('html').send(html));
 
