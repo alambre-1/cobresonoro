@@ -35,7 +35,7 @@ const html = `
 <body style="background-color: lightblue">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/images/logos/photo_2023-09-21_18-38-55.jpg" alt="Logo">Cobre Sonoro</a>
+          <a class="navbar-brand" href="#"><img src="/images/logos/photo_2023-09-21_18-38-55.jpg" alt="Logo" style="width: 50px; height: auto;">Cobre Sonoro</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
