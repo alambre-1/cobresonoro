@@ -1,5 +1,5 @@
 body {
-    background:'/images/mosaic.jpeg';
+    background-image: url("/images/mosaic.jpeg");
     background-color: rgba(255,255,255,0.1);
     /*background-size: cover;
     background-repeat: no-repeat;
