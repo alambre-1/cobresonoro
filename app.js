@@ -1,6 +1,32 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
+
+//this is to handle the form sent through "contact.html"
+const bodyParser = require('body-parser');
+
+//this is also to handle the form sent through "contact.html"
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.post('/form', (req, res) => {
+  // Get the form data from the request body
+  const formData = req.body;
+  
+  // Form data will be parsed into a JavaScript object
+  // For example if the form had fields named 'name' and 'email'
+  // formData would contain:
+  // {
+  //   name: 'John Doe', 
+  //   email: 'john@email.com'
+  // }
+
+  // Do something with the form data
+  // For example save it to a database
+
+  res.send('Form data received');
+});
+
+
 app.use('/images', express.static(__dirname + "/images"));
 //app.use(express.static('/images'))
 app.use('/css', express.static(__dirname + "/css"));
