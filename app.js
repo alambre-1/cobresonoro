@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 //this is also to handle the form sent through "contact.html"
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post('/form', (req, res) => {
+app.post('/contact', (req, res) => {
   // Get the form data from the request body
   const formData = req.body;
   
@@ -22,6 +22,7 @@ app.post('/form', (req, res) => {
 
   // Do something with the form data
   // For example save it to a database
+  console.log(FormData)
 
   res.send('Form data received');
 });
