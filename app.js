@@ -23,7 +23,7 @@ app.post('/contact', (req, res) => {
   // Do something with the form data
   // For example save it to a database
   
-  res.send("Form was sent successfully: " + JSON.stringify(formData));
+  res.send("Form was sent successfully: " + req.body);
 });
 
 
