@@ -22,8 +22,21 @@ app.post('/contact', (req, res) => {
 
   // Do something with the form data
   // For example save it to a database
+  var fs = require('fs');
+
+  fs.appendFile('usersdatabase.txt', formData.name + ', ', function (err) {
+    if (err) throw err;
+  });
   
-  res.send("Form was sent successfully: " + req.body);
+  fs.appendFile('usersdatabase.txt', formData.email + ', ', function (err) {
+    if (err) throw err;
+  
+  }); {
+  fs.appendFile('usersdatabase.txt', formData.message + '\n ', function (err) {
+    if (err) throw err;
+  });
+
+  res.send("Form was sent successfully");
 });
 
 
