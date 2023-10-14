@@ -36,8 +36,19 @@ app.post('/contact', (req, res) => {
   fs.appendFile('usersdatabase.txt', formData.message + '\n ', function (err) {
     if (err) throw err;
   });
-  res.send("Form was sent successfully");
+//to see if I can read the database
+  var usersdatabasecontents = fs.readFile('usersdatabase.txt', 'utf8', (err, data) => {
+    if (err) {
+    // Handle the error
+    }
+    // data will contain the contents of the file
+    return data;
+    });
+
+  res.send(usersdatabasecontents);
   });
+
+
 
 app.use('/images', express.static(__dirname + "/images"));
 //app.use(express.static('/images'))
