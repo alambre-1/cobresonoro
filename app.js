@@ -36,11 +36,8 @@ app.post('/contact', (req, res) => {
   fs.appendFile('usersdatabase.txt', formData.message + '\n ', function (err) {
     if (err) throw err;
   });
-});
-
   res.send("Form was sent successfully");
-
-
+  });
 
 app.use('/images', express.static(__dirname + "/images"));
 //app.use(express.static('/images'))
